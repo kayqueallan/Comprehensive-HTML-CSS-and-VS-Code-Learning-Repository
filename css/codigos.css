@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* BACKGROUNDS
+
+background-color   -> // MUDA A COR DO FUNDO DA PAGINA
+
+
+|| background-image   -> // COLOCA UMA IMAGEM DE FUNDO || ex: background-image:url(pasta-da-img)
+
+
+background-size -> //MUDA O TAMANHO DE FUNDO DA IMG 
+
+   || ex: background-size: contain; ENQUADRA O TAMANHO CERTO DA IMAGE CASO CONTRARIO REPETE ELA NOVAMENTE AJUSTANDO A TAMANHO
+
+   || ex: background-size: cover; TENTA ADAPTAR O FUNDO DE ACORDO COM TAMANHO DO ELEMENTO !! TIPO UMA JUNCAO DE PHOTOSHOP !! 
+
+
+
+\\ background-repeat: no-repeat;   -> // NAO REPETE A IMG DEIXANDO ELA COM FUNDO "NATURAL"
+
+\\ background-repeat: repeat;  -> // REPETE A IMAGEM 
+
+\\ background-repeat: repeat-x   -> // REPETE EM LINHA HORIZONTAL 
+
+\\ background-repeat: repeat-y  -> // REPETE EM LINHA VERTICAL
+
+
+
+background-position: center;  -> // POSICIONA O CENTRO DA IMAGEM 
+
+background-positon: top;  -> // POSICIONA O TOPO DA IMAGEM
+
+...
+
+
+!! ISSO PODE SER FEITO EM UMA SO EXPRESSAO short heind APENAS ADICIONANDO ESPACO ENTRE UMA ATRIBUICAO A OUTRA
+
+ex:
+
+background: gray no-repeat center;
+
+
+...
+
+EXEMPLO:
+
+    
+
+    */
+
+* {
+  background: gray center no-repeat url("../HTML/index.html");
+
+  background-color: aliceblue;
+
+  background-image: url("../COMANDO\ VS\ CODE");
+
+  background-size: contain;
+
+  background-size: cover;
+
+  background-size: 100%;
+
+  background-position: center;
+
+  background-position: top;
+
+  background-repeat: repeat-x;
+
+  background-repeat: repeat-y;
+
+  background-repeat: no-repeat;
+}
+
+/* BORDA
+
+border: 1px -> // TAMANHO DA BORDA MEDIDO EM PX 
+
+border: 1px solid -> // FAZ UMA BORDA SOLIDA (LINHA CONSTANTE)
+
+border: 1px dotted -> // FAZ UMA BORDA COM PONTINHOS (LINHA PONTILHADA)
+
+border: 1px dashed -> // FAZ UMA BORDA COM TRACINHOS (LINHA TRACEJADA)
+
+border: 1px double -> // FAZ UMA BORDA DUPLA (DUAS LINHAS)
+
+border: 1 px groove -> // FAZ UMA BORDA ESTILO 3D
+
+
+//POSSO DIRECIONAR O LADO QUE A BORDA FICA 
+
+border-left: 1px solid black  // borda a esqueda 
+
+border-right: 2px dashed white // borda a direita 
+
+border-top: 3px dotted blue  // borda ao topo
+
+border-bottom: 4px double orange // borda em baixo 
+
+
+//BORDA ARREDONDADA
+
+colocar o atributo radius em border medido em px ou %
+
+border: 1px solid black 
+border-radius: 10px
+
+*/
+
+* {
+  border: 1px solid;
+
+  border: 1px dotted;
+
+  border: 1px dashed;
+
+  border: 1px double;
+
+  border: 1px groove;
+
+  border-left: 1px solid black;
+
+  border-right: 2px dashed white;
+
+  border-top: 3px dotted blue;
+
+  border-bottom: 4px double orange;
+
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+/*MARGEM 
+
+|| margin: SERVE PARA DAR UM ESPACO EM BRANCO DE DIVERSAS      DIRECOES DO ELEMENTO PODE SER MEDIDA EM % OU px (MODFICAR POSICAO DO ELEMENTO EM RELACAO A OUTRO)
+
+margin-top: 30px; //DISTANCIA DA MARGEM NO TOPO
+
+margin-bottom: 2px; //DISTANCIA DA MARGEM DE BAIXO
+
+margin-left: 10%; //DISTANCIA DA MARGEM A ESQUERDA
+
+margin-right: 95%; //DISTANCIA DA MARGEM NO DIREITA
+
+|| SEQUENCIA 
+
+TOPO -> DIREITA -> EMBAIXO -> ESQUERDA
+
+//PODE SE FAZER TUDO EM UMA SO ATRIBUTO
+
+margin: 10px 20px 55px 21px; 
+
+*/
+
+* {
+  margin-top: 30px;
+
+  margin-top: 30px;
+
+  margin-left: 10%;
+
+  margin-right: 95%;
+
+  margin: 10px 20px 55px 21px;
+}
+
+/*PADDING - PREENCHIMENTO
+
+//FAZ UM PREENCIMENTO DENTRO DO PROPRIO ELEMENTO 
+
+padding-top: 10px; // FAZ UM PREENCHIMENTO DENTRO DO ELEMENTO NO TOPO 
+
+padding-bottom: 20px; // FAZ UM PREENCHIMENTO DENTRO DO ELEMENTRO EM BAIXO
+
+padding-left: 2px; // FAZ UM PREENCHIMENTO DENTRO DO ELEMENTO A ESQUERDA 
+
+padding-right: 9px; // FAZ UM PREENCHIMENTO DENTRO DO ELEMENTO A DIREITA 
+
+
+//PODE SE FAZER ISSO TUDO DE UMA SO VEZ
+
+padding: 2px 20px 1px 21px;
+
+padding: 10px; // FAZ PREENCHIMENTO DE TODOS OS LADOS
+
+|| SEQUENCIA 
+
+TOPO -> DIREITA -> EMBAIXO -> ESQUERDA
+
+
+ */
+
+* {
+  padding-top: 10px;
+
+  padding-bottom: 20px;
+
+  padding-left: 2px;
+
+  padding-right: 9px;
+
+  padding: 2px 20px 1px 21px;
+
+  padding: 10px;
+}
+
+/*TEXTOS
+
+text-align: center;     // alinha o texto ao centro
+text-align: left;      // alinha texto a esquerda
+text-align: rigth;    // alinha texto a direita
+text-align: justify; // alinha texto totalmente (DEIXA DE FORMA QUADRADA)
+
+
+text-decoration                 // utilizado para adicionar ou remover decoracoes
+text-decoration: none;         // nenhuma decoracao
+text-decoration: overline;    // linha sobre as letras
+text-decoration: underline;  //sublinhado 
+
+text-transform: uppercase;    // deixa todas as letras maiusculas
+text-transform: lowercase;   // deixa todas as letras minusculas
+text-transform: capitalize; // deixa todas as primeiras letras maiusculas
+
+
+text-indent: 1px;        // faz efeito de espacamentos quando se inicia um paragrafo
+
+letter-spacing: 5px;   // distanciamento ou encurtamento de letras
+
+line-height: 1.2;    // distanciamento entre linhas de texto (medido em casas decimais)
+
+word-spacing: 5px; //distanciamento de palavras 
+
+
+ */
+
+* {
+  text-align: center;
+  text-align: left;
+  text-align: right;
+  text-align: justify;
+
+  text-decoration: none;
+  text-decoration: overline;
+  text-decoration: underline;
+
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+
+  text-indent: 1px;
+
+  letter-spacing: 5px;
+
+  line-height: 1.2;
+
+  word-spacing: 5px;
+}
+
+/* FONTES
+
+color: white ;    // COLORIR UM TEXTO
+
+font-size: 10px ;   // MUDA O TAMANHO DA FONTE
+
+font-family: arial ;  // ESCOLHE QUAL A FONTE   
+
+
+==> QUANDO QUISER COLOCAR UMA FONTE PERSONALIZADA DEVE COLOCAR A URL DA FONTE ANTES DO DOCUMENTO E DEPOIS CHAMAR ELA COM font-family
+
+LOGO ABAIXO OS EXEMPLOS
+
+font-style: italic; //DETERMINA OS ESTILOS QUE A FONTE VAI TER
+
+font-weight: 100  // determina a grossura da fonte
+
+*/
+
+* {
+  color: aquamarine;
+
+  font-size: 100px;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  font-style: italic;
+
+  font-weight: 100 bold;
+}
+
+/*DISPLAY
+
+display: inline;  // DEIXA OS OBJETOS EM SEQUENCIA TUDO EM APENAS "UM BOLOCO"
+
+display: none;  // DEIXA O CODIGO ATIVO MAIS NAO APARECE NA PAGINA 
+
+display: block; // DEIXA A TAG QUE RECEBE EM UM LAYOUT DO TIPO BLOCO
+
+display: inline-block // PERMITE QUE POSSA SER ALTERADO A ALTURA E LARGURA (CARACTERISTICAS HEDADAS DO INLINE/ COLOCAR EM LINAS E BLOCK/PODER MODIFICAR HEIGHT E WIDTH)
+
+ */
+
+/*COMO DEIXAR UM ITEM COM VISIBILIDADE OCULTA 
+
+ !! deixa o item oculto != do display none que desativa o codigo
+ 
+ visibility: hidden;
+  
+ */
+
+/* ALTURA E LAGURA 
+
+ width: 1px; // LARGURA MEDIDA EM PIXELS 
+
+ height: 2px; // ALTURA MEDIDA EM PIXELS 
+ 
+ max-width: 800px; // LARGURA MAXIMA DO ELEMENTO, FAZ COM QUE CRIE LAYOUTS RESPONSIVOS 
+
+
+ 
+ */
+
+* {
+  width: 1px;
+  height: 2px;
+  max-width: 800px;
+}
+
+/* POSICAO
+
+POSICAO DO ELEMENTO EM RELACAO A TELA 
+
+position: static; // PADRAO DE TODO ELEMENTO HTML (POSICIONAMENTO ESTATICO)
+
+position: relative; // POSICAO DO ELEMENTO RELATIVA PODENDO DESLOCAR O ELEMENTO SEM QUE EMPURRE O OUTRO PODENDO UM FICAR EM CIMA DO OUTRO 
+
+usando combinacoes de deslocamento de direita esquerda top e embaixo 
+
+ex:
+
+position:relative;
+left: 2px;
+
+ z-index: 2  -->  // UTILIZADO PARA FAZER CAMADAS DE ELEMETOS PODENDO UM SOBREPOR O OUTRO (PODE SE UTILIZAR NUMEROS DE -999 A 999)   !! ISSO SO FUNCIONA COBINANDO COM O POSITION RELATIVE !!
+
+
+ position: fixed;  // E UTILIZADO PARA O ELEMENTO FICAR FIXADO NA TELA INDEPENDENTE DA BARRA DE ROLAGEM OU DOS TEXTOS E IMAGENS AO FUNDO // PERMITE TAMBEM FAZER POSICIONAMENTO NA TELA EM RELACAO O TOPO, BAIXO , ESQUERDA E DIREITA.
+
+ position: absolute; // E UTILIZADO EM RELACAO AO UM DIV PAI COMO POR EXEMPLO UM BACKGROUND NO FUNDO DESLOCA TANTOS PX EM RELACAO A ESSE BACKGROUND !! O PAI TEM NAO PODE TER UM POSICIONAMENTO ESTATICO TEM QUE TER UMA POSITION RELATIVA PARA FUNCIONAR!!
+
+ position: sticky; // SIGNIFICADO DE GRUDENTO OU SEJA QUANDO ESTIVER UMA BARRA DE ROLAGEM PASSAR SOBRE TAL ELEMENTO QUE CONTER ESSE CODIGO ISSO IRA MOVIMENTAR JUNTAMENTE COM A BARRA DE ROLAGEM
+  
+ */
+
+* {
+  position: static;
+
+  position: relative;
+
+  position: fixed;
+
+  position: absolute;
+
+  position: sticky;
+}
+
+/*OVERFLOW 
+
+ SO FUNCIONA SE ESPECIFICAR UMA ALTURA DE UM ELEMENTO FAZ COM QUE UM ELEMENTO QUE TENHA UM TAMANHO ESPECIFICO EXEMPLO UM BACKGROUND, E COLOQUE UM TEXTO DENTRO QUE NAO CAIBA EM TODO BACKGROUN FIQUE DE FORA NAO PEGANDO A COR DE FUNDO, ENTAO ISSO FAZ UM SCROLL DO LADO PARA QUE CAIBA TUDO DENTRO DO ELEMENTO 
+
+ EX: 
+  
+ overflow: scroll; // FAZ UMA BARRA DE ROLAGEM AO LADO | NECESSITANDO OU NAO 
+
+ overflow: auto; // FAZ UM SCROLL SE NECESSARIO
+
+ overflow: visible; // VAI MOSTRAR O CONTEUDO MESMO QUE SAIA PARA FORA DO ELEMENTO 
+
+ overflow: hidden; // MOSTRA SO O QUE SE ENCAIXA DENTRO DO ELEMENTO | TUDO QUE FICA FORA NAO SE APARECE
+
+ overflow-x: hidden; // RETIRA A BARRA DE ROLAGEM DO EIXO X (A PROPRIA DO NAVEGADOR)
+
+ overflow-y: hidden; // RETIRA A BARRA DE ROLAGEM DO EIXO Y (A PROPRIA DO NAVEGADOR)
+ 
+ */
+
+* {
+  overflow: scroll;
+
+  overflow: auto;
+
+  overflow: visible;
+
+  overflow: hidden;
+}
+
+/* FLOAT 
+
+ FLUTUAR OU FAZER COM QUE UM ELEMENTO FLUTUE 
+
+ float: leaft: // COLOCA UMA IMAGEM OU TEXTO DE UM LADO| FAZENDO QUE POSSA COLOCAR UM ELEMENTO AO LADO
+
+ clear: both // SERVE PARA LIMPAR UM PONTO DE FLUTUACAO FAZENDO COM QUE O OBJETO NAO CONTORNE A IMAGEM POR EXEMPLO 
+ 
+  */
+
+/* OPACIDADE
+  
+  -opacity: 0 a 1; deixa o elemento tranlucido
+  
+  */
+
+/*EFEITO DROPDOWN
+  
+  COLOCA UMA CAIXINHA OCULTA TIPO QUANDO PASSA O MOUSE EM CIMA E APARECE UM ITEM PARA ESCOLHER
+
+  
+  
+   */

@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+
+.container {
+  background-color: blue;
+  color: white;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  border: 1px red solid;
+}
+
+a {
+  /* border: red 1px solid; */
+
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  padding: 20px;
+  color: white;
+  width: 15%;
+  text-align: center;
+}

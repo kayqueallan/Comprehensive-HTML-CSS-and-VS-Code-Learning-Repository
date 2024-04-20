@@ -1,0 +1,233 @@
+<!-- CSS INLINE -->
+
+QUANDO COLOCADO DENTRO DO COMPONENTE HTML/DENTRO DA TAG DAS TAGS COLOCANDO O
+style, FAZENDO COM QUE TUDO DENTRO DESSA TAG FIQUE COM ESSA FORMATACAO. EX:
+
+<h1 style="background-color: aqua">Meu primeiro site com CSS</h1>
+
+<!-- CSS INCORPORADO -->
+
+ANTES DO FECHAMENDO DA TAG head E COLOCANDO UMA TAG CHAMADA DE style e tudo que
+e colocado dentro e modificado. !! O QUE E COLOCADO DENTRO DA TAG E MAIS
+PRIORITARIO QUE O COLOCADO DENTRO DE head !! EX:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESTUDANDO CSS</title>
+    <style>
+      body {
+        background: white;
+      }
+      h1 {
+        color: aqua;
+        font-size: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Meu primeiro CSS</h1>
+  </body>
+</html>
+
+<!-- CSS EXTERNO -->
+
+E FEITO UMA PAGINA EXTERNA ONDE SO CONTEM CSS, SENDO APLICADO DENTRO DO HTML
+ATRAVES DE UMA TAG CHAMADA DE LINK COLOCADA DENTRO DA TAG head //
+<link rel="stylesheet" href="exemplo.css" />
+
+EX:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    //
+    <link rel="stylesheet" href="main.css" />
+    //
+  </head>
+  <body></body>
+</html>
+
+// REGRAS DE PRIORIDADE DO CSS CSS INLINE -> CSS INCORPORADO -> CSS EXTENO
+
+<!-- SELETORES E CLASSES -->
+
+DENTRO DO CSS uma class com pre definições ADICIONANDO SOMENTE DENTRO DA TAG
+HTML ATRAVES DO ATRIBUTO CHAMDO class="" EX:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .kayque {
+        text-align: center;
+        background-color: blueviolet;
+        color: yellow;
+      }
+      .lyvia {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="kayque">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda,
+      doloremque consequatur. Recusandae id deserunt odit aspernatur cumque
+      magni nostrum voluptate voluptates libero. In, eveniet animi! Quos ex
+      assumenda nihil culpa.
+    </p>
+    <p class="lyvia">
+      Eaque blanditiis, iusto molestias hic a porro eos minus iste odit nemo!
+      Quaerat aut alias fugiat, provident ad, eum voluptates, vel qui hic
+      voluptatum sint animi consequuntur exercitationem pariatur omnis.
+    </p>
+    <p>
+      Sit, vitae ipsum minima architecto, sunt rerum iste, modi dolore quisquam
+      eaque beatae? Dolor animi, porro labore vero reiciendis beatae amet ipsa,
+      doloremque expedita aliquam, accusamus omnis ab cupiditate eaque.
+    </p>
+  </body>
+</html>
+
+OBS: PODE SER FEITO EM CSS EXTERNO
+
+<!-- SELETOR ID -->
+
+// PODE TAMBEM QUERER EDITAR SOMENTE UMA TAG FAZENDO COM QUE COLOQUE DENTRO DELA
+UM ATRIBUTO id PARA BATIZAR A TAG COM NOME UNICO FAZENDO UMA ALTERACAO
+ESPECIFICA SOMENTE NELA, FAZENDO ISSO UTILIZANDO O # NO CSS QUANDO COLOCADO UM
+id. !! nunca pode comecar o atributo com numero e o id e utilizado em somente
+para 1 alteracao, quando for varia deve-se utilizar a class="" !! EX:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #teste {
+        text-align: center;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="teste">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo rerum
+      possimus harum reiciendis facere consequuntur inventore aliquid, ea hic
+      earum voluptate distinctio veniam. Vel rerum, maxime natus labore in
+      aliquam.
+    </p>
+  </body>
+</html>
+
+<!-- SELETOR UNIVERSAL PARA TODAS AS TAGS -->
+
+//QUANDO QUISER QUE TODAS AS TAGS TENHAM FORMATACAO UNIVERNAL DEVE SE UTILIZAR O
+* EX:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 20px;
+        margin: 0px;
+        color: #fff;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body></body>
+</html>
+
+<!-- TAGS COM MESMA ATRIBUICAO -->
+
+QUANDO QUISER QUE DUAS OU MAIS TAGS TENHA A MESMA ATRIBUICAO ,PODE SER SEPARADO
+COM VIRGULA FAZENDO COM QUE A TAG FIQUE COM MESMA FORMATACAO EX:
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1,
+      p {
+        color: black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CARALHO CSS</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+      explicabo? Doloribus vero ducimus modi fugit magni natus perferendis vel
+      obcaecati odit voluptatibus molestiae, tempore doloremque beatae excepturi
+      praesentium ab ullam.
+    </p>
+  </body>
+</html>
+
+<!-- HOVER -->
+
+// QUANDO O MOUSE ESSTIVER EM CIMA PARA MOSTRAR OUTRA COR ETC DEVE SE ADICIONAR
+:hover apos adicionar uma class ex:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .decoracao:hover {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="decoracao">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae esse
+      libero similique amet aliquam. Ipsam repellat dolorum nulla iste? Soluta
+      velit vel excepturi ipsam odit dignissimos quia delectus, tempore dolorum?
+    </p>
+  </body>
+</html>
+
+!!QUANDO PASSAR A MOUSE EM CIMA O O TEXTO IRA FICAR AZUL !!
+
+<!-- DISPLAY -->
+
+PRINCIPAL ELEMETO PARA CONTROLAR O LAYOUT, ESPECIFICA SE OU COMO O ELEMENTO IRA
+SER EXIBIDO (SE VAI OCUPAR TODA TELA OU IRA FICAR UM AO LADO DO OUTRO)
+
+<!-- //DISPLAY DO TIPO BLOCO  -->
+
+comeca no inicio da linha e se ocupa todo espaco da pagina ex:
+
+<h1>TITULO 1</h1>
+<h1>TITULO 2</h1>
+
+// FAZ UMA QUEBRA DE LINHA (OS DOIS NAO FICAM UM AO LADO DO OUTRO , POIS SAO
+ELEMENTOS DO TIPO BLOCO/ FAZ QUE OCUPE TODA EXTENCAO DE LINHA DA PAGINA)
+
+<!-- //DISPLAY INLINE  -->
+
+nao se inicia em uma nova linha ou ocupa toda linha da pagina do inicio ao fim
+
+<a href="../COMANDO VS CODE">ENTER</a>
+<a href="../COMANDO VS CODE">ENTER 2</a>
+
+// OS DOIS ELEMENTOS FICAM UM AO LADO DO OUTRO OCUPANDO SOMENTE O ESPACO
+NECESSARIO (nao faz uma quebra de linha)

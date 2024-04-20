@@ -1,0 +1,396 @@
+<!-- URL -->
+
+O padrão utilizado para identificar recursos na Internet é denominado Uniform Resource Identifier (URI) que se desdobra em Uniform Resource Locator (URL) ou Uniform Resource Name (URN). 
+
+AAAA://BBBB:CCCC/DDDD?EEEE#FFFFF
+
+//IMPORTANTE
+
+- Escreva uma única palavra no singular
+- Use caixa baixa (minúsculo)
+- Não utilize acentos
+
+
+<!-- AAAA -->: Aqui está o esquema (scheme) da URL. Este componente especifica o protocolo de comunicação a ser utilizado. Exemplos comuns de esquemas são "http", "https", "ftp", "mailto", entre outros.
+
+<!--BBBB-->: Esta parte da URL é o nome do host. Identifica o servidor onde o recurso está localizado. Pode ser um nome de domínio, como "www.exemplo.com", ou um endereço IP.
+
+<!--CCCC-->: O número de porta. Indica o número de porta TCP usado para acessar o serviço no servidor. Para protocolos comuns, como HTTP, o padrão é 80 para HTTP e 443 para HTTPS.
+
+<!-- DDDD-->: Este é o caminho (path) do recurso no servidor. Especifica o local no servidor onde o recurso está localizado. Por exemplo, em um site, o caminho pode ser "/pasta/pagina.html". 
+
+<!-- EEEE-->: A query (consulta) ou parâmetros da URL. Esta parte opcional da URL é usada para enviar dados para o servidor. Os parâmetros são geralmente na forma de chave/valor e são separados por "&". Por exemplo, "?id=123&nome=exemplo". 
+
+<!-- FFFFF-->: O fragmento (fragment). Também é uma parte opcional da URL. É usado para identificar uma parte específica do recurso referenciado na URL. Por exemplo, em uma página da Web longa, o fragmento pode ser usado para rolar diretamente para uma seção específica da página. O fragmento é precedido por "#".
+
+
+
+
+<!-- CODIGOS PARA TEXTO -->
+
+    <h1></h1> Titulo tamanho 1
+    <p></p> Paragrafo
+
+<!-- //FORMATAÇÃO DE TEXTO -->
+
+    <strong></strong> - Negrito (enfase)
+    <b></b> - Negrito
+    <i></i> - italico
+    <u></u> - Sublinhado
+    <br> - Pular linha (quebra de linha)
+    <hr> Linha horizontal
+    <small></small> - Texto pequeno
+    <sup></sup> Texto ou numero colocado superir (ex:potencia)
+    <sub></sub> Texto inferior
+    <mark></mark> Marca Texto
+    <button></button> Adiciona um BOTAO na tela
+    p*x Adiciona x paragrafos
+    p*x>lorem Adiciona x paragrafos lorem
+    &nbsp; = ESPACAMENTOS LATERAIS
+
+
+<!-- ABREVIÇÃO -->
+
+
+    <abbr></abbr> - E USADO PARA ABREVIAÇÕES QUE EX: "WWW", QUANDO PASSAR O MOUSE EM CIMA MOSTRA WORD WIDE WEB
+    EX: <abbr title="word wode web">WWW</abbr>
+
+
+<!-- LINKS -->
+
+
+    <a></a> UTILIZADO PARA COLOCAR LINKS
+
+    EX: <a href="https://google.com"></a>
+
+    <!-- //CASO QUEIRA QUE ESSE LINK SEJA ABERTO EM UMA NOVA PAGINA ADD TARGET -->
+
+    EX: <a href="https://google.com" target="_blank">COMENTARIO QUE VAI TER O LINK</a>
+
+    <!-- //CAMINHO RELATIVO (QUANDO QUER QUE VAI PARA OUTRA PAGINA MAIS DENTRO DO MESMO DOCUMENTO), E CRIADO UMA PAGINA NO CANTO ESQUERDO SUPERIOR -->
+
+    EX:<a href="teste.html">IR PARA OUTRA PAGINA</a>
+
+    <!-- //CASO QUEIRA VOLTAR DESSA PAGINA(SO COLOCAR DENTRO DELA UM LINK DE VOLTA) -->
+
+    EX:<a href="index.html">VOLTAR PARA PAGINA PRINCIPAL</a>
+
+    <!-- QUANDO UMA PAGINA HTML ESTIVER DENTRO DE UMA PASTA DEVE COLOCAR O NOME DA PASTA -->
+    
+    EX: <a href="pasta/arquivo.html">NAVEGAR PARA PASTA</a>
+
+    <!-- QUANDO QUISER VOLTAR PARA UMA PAGINA PRICIPAL E O ARQUIVO ESTIVER DENTRO DE UMA PASTA DEVE SE UTILIZAR ../ E SE ESTIVER DENTRO DE DUAS PASTAS E ../../ E ASSIM SEGUE -->
+
+    EX: <a href="../index.html">VOLTA PARA PRINCIPAL UTILIZANDO ../ </a>
+
+
+    <!-- IMAGENS -->
+
+
+    <img src="LINK DA IMAGEM"> 
+    // A TAG PARA SE ADICIONAR IMAGEM NÃO TEM FECHAMENTO COMO AS OUTRAS EX: </img>, e é coloca SRC quer dizer o caminho dessa imagem.  
+
+
+    <!-- PARA SE EDITOR A IMAGEM PODEM USAR DOIS COMANDOS COMO WIDTH=LARGURA / HEIGHT = ALTURA. -->
+
+    EX: <img src="LINK DA IMAGEM" width="300px" height="200px">
+
+
+    <!-- PARA PESSOAS DEFICIENTES VISUAIS PODE SE COLOCAR O COMANDO ALT= O NAVEGAR LE A IMAGEM, FAZENDO INCLUSAO DE PESSOAS COM DEFICIENCIA VISUAL  -->
+
+    EX: <img src="LINK DA IMG" alt="DESCREVER A IMAGEM">
+
+
+    <!-- QUANDO A IMAGEM ESTVER EM UMA PAGINA DECE SE COLOCAR NOME DA PASTA/NOME DA IMG -->
+
+    EX: <img src="img/formatura.png" width="300px" alt="Formatura escolar">
+
+
+    <!-- COMO FAZER UMA IMAGEM COM LINK -->
+    
+    
+    EX: 
+    <a href="index.html">
+        <img src="img/formatura.png">
+    </a>
+
+    ou seja: coloca a tag de link, a pagina que deseja ir e dentro dessa tag a img.
+
+    
+    
+    <!-- TABELAS -->
+
+
+    <table></table> = TABELA
+    <tr></tr> = LINHA
+    <th></th> = COLUNA (SO UTILIZADO NA PRIMEIRA LINHA)
+    <td></td> = CONTEUDO DENTRO DA TABELA
+    width = LARGURA MEDIDO EM %
+    BORDER = BORDA DO TAMANHO EM PX
+
+    EX: 
+    
+    <table width="100%" border="1px">
+    <tr>
+       <th>KAYQUE</th>
+       <th>LYVIA</th>
+       <th>LILIANE</th>
+    </tr>
+    <tr>
+        <td>18</td>
+        <td>10</td>
+        <td>42</td>
+    </tr>
+    <td>LINDO</td>
+    <td>LINDA</td>
+    <td>LINDA</td>
+
+    </table>
+    
+
+
+    <!-- LISTAS -->
+
+    //LISTA NÃO ORDENADA - UTILIZA O PONTO
+
+    <ul></ul> 
+    <LI></LI>
+
+    //LISTA ORDENADA - ORDENA POR NUMEROS 
+
+    <ol></ol>
+    <li></li>
+
+    ex:
+
+    <ul>
+        <li>ARROZ</li>
+        <li>FEIJÃO</li>
+        <li>MACARRÃO</li>
+    </ul>
+    
+    
+
+    <!-- FORMULARIO DO TIPO INPUT-->
+
+    <form></form> = TODO FORMULARIO SE INICIA COM ESSA TAG
+    <input></input> = DADO DE ENTRADA 
+    <label></label> = LEGENDA - MOSTRA O DEVE SER DIGITADO DENTRO DA CAIXINHA
+    <IMPUT CONTEUDO>
+    //POSSUI VARIOS TYPE (TIPOS) COMO:
+
+    "TEXT" = FAZ UMA CAIXINHA PARA VOCE ESCREVER O TEXTO
+    "PLACEHOLDER" = FAZ UMA MARACA D'AGUA EX: digite seu nome aqui
+    VALUE = E O QUE REALMENTE E MANDANDO DO FORMULARIO 
+
+    ex: 
+
+    <!-- //DO TIPO TEXTO - UTILIZADO PARA NOMES/SOBRENOMES// -->
+
+    <form>
+        <label>Nome:</label>
+    <input type="text" placeholder="Digite seu nome aqui">
+    </form>
+
+    <!-- //CAMPO DO TIPO SENHA//  -->
+
+    O QUE MUDA E O TYPE, QUE E ADICINADO NO LUGAR DE TEXT O PASSWORD, QUE FAZ COM QUE O CAMPO FIQUE INVISIVEL
+
+
+    O comando for faz com que ao clicar na palavra que esta dentro do comando label ex: senha, manda direto para casa de mensagem, tendo que colocar um id(indentificacao), que ao clicar faz com que leva a caixa de texto
+
+    EX:
+
+    <form>
+        <label for="Sua_senha">Senha:</label>
+        <input type="password" placeholder="Digite aqui sua senha" id="Sua_senha">
+    </form>
+
+
+    <!-- //CAMPO DO TIPO EMAIL// -->
+    
+    O QUE MUDA NOVAMENTE E O TYPE, QUE AGORA PASSA SER EMAIL
+
+    O COMANDO  required MOSTRA A QUEM ESTA ENVIANDO O FORMULARIO QUE ESTE CAMPO DEVE SER PREENCHIDO DE FORMA OBRIGATORIA
+
+    EX:
+
+    <form>
+        <label for="Email">Email:</label>
+        <input type="email" placeholder="Digite seu EMAIL" id="Email" required  >
+    </form>
+
+
+    <!-- //CAMPO DO TIPO SUBMIT// -->
+
+    E O CAMPO QUE FAZ A CAIXINHA PARA ENVIAR O FORMULARIO - BOTAO DE ENVIAR
+
+    O COMANDO value E PARA COLOCAR O NOME NA CAIXINHA - NOMEAR ELA 
+
+    ex:
+    
+    <form>
+        <input type="submit" value="ENVIAR" >
+    </form>
+
+    
+    <!--// CAMPO DO TIPO RADIO// -->
+
+    E O CAMPO ONDE PODE SELECIONAR APENAS UMA VARIAVEL DIFERENTE OU SEJA APENAS GATO CACHORRO OU PAPAGAIO, PARA ISSO SE UTILIZA O NAME: TENDO QUE DEIXAR TODOS COM O MESMO TIPO COMO DESCREVE ABAIXO
+
+    EX: SIM NAO
+
+    ex: 
+
+    <form>
+        <input type="radio" value="Cachorro" name="Animal" id="dog">
+        <label for="dog">Cachorro</label>
+        
+        <br><br>
+
+        <input type="radio" value="Gato" name="Animal" id="cat">
+        <label for="cat">Gato</label>
+        
+        <br><br>
+
+        <input type="radio" value="Papagaio" name="Animal" id="Papagaio">
+        <label for="Papagaio">Papagaio</label>
+    </form>
+
+
+    <!-- //CAMPO DO TIPO CHECKBOK// -->
+
+    CAMPO UTILIZADO PARA QUE POSSA SELECIONAR VARIAS COISAS PODENDO SER CACHORRO E GATO OU GATO E PAPAGAIO... PARA ISSO UTILIZA O TYPE checkbox, mudando o name colocando diferente. (MULTIPLA ESCOLHA)
+
+    ex:
+    <form>
+        <input type="checkbox" value="dias" name="Segunda-feira" id="seg"  >
+        <label for="seg">Segunda-feira</label>
+        
+        <br><br>
+
+        <input type="checkbox" value="dias" name="Terca-feira" id="Ter">
+        <label for="ter">Terca-feira</label>
+        
+        ...
+
+    </form>
+
+
+    <!-- FORMULARIO DO TIPO SELECT -->
+
+    FORMULARIO DO TIPO ONDE TEM MULTIPLAS ECOLHAS - FAZ UMA CAIXINHA
+    
+    EX:
+
+    <form>
+        <select name="Cores">
+            <option selected disabled value="">Selecione uma cor</option>
+            <option value="Azul">Azul</option>
+            <option value="Vermelho">Vermelho</option>
+            <option value="Amarelo">Amarelo</option>
+            <option value="Laranja">Laranja</option>
+        
+        </select>
+    </form>
+    
+
+    O PRIMEIRO OPTION DESATIVA A OPCAO SELECIONA UMA COR E MOSTRA COMO MARCA D AGUA SELECIONE UMA COR, IMPOSSIBILITANDO DE MARCAR.
+
+
+    <!-- FORMULARIO DO TIPO TEXTAREA -->
+
+    FAZ UM CAMPO PARA SER ENVIADO O FORMULARIO, UTLIZANDO O COMANDO <TEXTarea></TEXTarea>
+
+    cols = colunas
+    rows - linhas 
+
+    EX:
+
+    <form>
+
+        <h3>Digite uma mensagem</h3>
+
+        <textarea name="mensagem" id="msg" cols="40" rows="20" placeholder="Digite sua mensagem aqui..."></textarea>
+
+    </form>
+
+
+
+    <!-- AUDIOS -->
+
+    UTILIZADO PARA COLOCAR AUDIOS NA PAGINA 
+
+    <audio></audio> comando PRINCIPAL
+    <source> tag filho - DIZER QUAL E O ARQUIVO
+    // controls = utilizado para exibir controle de audio na tela
+    // src = mostra o caminho onde esta o arquivo 
+    // type = se o arquivo for mp3 deve se utilizar o comando descrito abaixo.
+   
+    ex:
+
+    <audio controls >
+        <source src="audio/teste.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- VIDEO -->
+
+    <video></video>
+    <source> tag filho - DIZER QUAL E O ARQUIVO
+    // SRC = mostra o caminho onde esta o arquivo
+    // type = se o arquivo for mp3 deve se utilizar o comando descrito abaixo.
+    // poster = para que ao abrir a pagina o video nao ficar preto, se utiliza esse comando para adicionar uma imagem ao video, como e representado abaixo.
+    // autoplay = com esse comando ao usuario entrar na pagina o video ja comeca rolar automaticamente.
+    // ControlsList = "nodownload" = faz com que o usuario nao possa baixar o video
+    // ControlsList = "nofullscreen" = faz com que o usuario nao possa colocar em tela cheia
+    // disablepictureinpicture = tira os tres pontinhos LATERAIS
+
+    EX:
+
+    <video controls autoplay width="" poster="img/formatura.png" controlsList="nodownload nofullscreen" disablepictureinpicture >
+        <source src="video/videos.mp4" type="video/mp4">
+    </video>
+
+            
+
+    <!-- DIV - SEMANTICA --> 
+    
+    COMO SE FOSSE UMA DIVISORIA DE BLOCOS ONDE  SEPARAMOS OS LAYOUTS EX:
+
+    -TOPO
+    -MENU 
+    -CONTEUDO
+
+
+    <div></div> - TAG GENERICA - DIVISORIAS
+
+    // class = clase - basicamente e a NOME desse div para o codigo css saber para qual div deve ser formatada
+
+    UTILIZAR DE FORMA SEMANTICA E NAO SO URLIZAR A DIV, MAS UTILIZAR ESSAS TAGS QUE TEM O REAL SIGNICADO, PARA FICAR DE FORMA SEMANTICA - (OBS: NAO MUDA NADA DE DIV)
+
+    <nav></nav> - MENU
+    <header></header> - TOPO
+    <section></section> - SEÇÃO - COTEUDOS DO SITE
+    <footer></footer> - RODAPE
+
+    OBS: MUDA SO A DIV PARA ESSA NOVA TAG 
+    
+    EX:
+
+    <div class="coluna">
+
+         
+            <h2>Coluna</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus hic ducimus expedita totam cupiditate explicabo? Nemo nulla quam accusantium porro quo, eligendi magnam ullam eaque id perspiciatis fugit, repellat facere.</p>
+
+    </div>
+
+
+    <!-- FIM -->
+
+
+
+
+    
